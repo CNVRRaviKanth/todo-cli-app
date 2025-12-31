@@ -18,5 +18,10 @@ def delete_task(index):
 def delete_task(index):
     tasks.pop(index)   # ❌ Bug: index should be index-1
 
+def add_task(task):
+    tasks.append(task)
+    print("Task added")
+
+
 if __name__ == "__main__":
     show_tasks()
