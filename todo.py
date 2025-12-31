@@ -10,5 +10,8 @@ def show_tasks():
 def delete_task(index):
     tasks.pop(index)   # ❌ Bug: index should be index-1
 
+def delete_task(index):
+    tasks.pop(index - 1)
+
 if __name__ == "__main__":
     show_tasks()
